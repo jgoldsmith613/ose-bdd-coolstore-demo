@@ -50,7 +50,7 @@ public class ShoppingCartServiceImplBRMS implements ShoppingCartService, Seriali
 
 			// HelloRulesClient.java
 			KieServicesConfiguration config = KieServicesFactory.newRestConfiguration(
-					"http://testserver2-test.rhel-cdk.10.1.2.2.xip.io/kie-server/services/rest/server", "justin",
+					"http://coolstore-rules/kie-server/services/rest/server", "justin",
 					"abcd1234!");
 			config.setMarshallingFormat(MarshallingFormat.XSTREAM);
 			RuleServicesClient client = KieServicesFactory.newKieServicesClient(config)
