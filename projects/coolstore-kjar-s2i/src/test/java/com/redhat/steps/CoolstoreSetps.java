@@ -35,7 +35,7 @@ public class CoolstoreSetps {
 	@When("^the shipping is calculated$")
 	public void the_shipping_is_calculated() throws Throwable {
 		KieServicesConfiguration config = KieServicesFactory.newRestConfiguration(
-				"http://testserver2-test.rhel-cdk.10.1.2.2.xip.io/kie-server/services/rest/server", "justin",
+				"http://coolstore-rules-development.rhel-cdk.10.1.2.2.xip.io/kie-server/services/rest/server", "justin",
 				"abcd1234!");
 		config.setMarshallingFormat(MarshallingFormat.XSTREAM);
 		RuleServicesClient client = KieServicesFactory.newKieServicesClient(config)
